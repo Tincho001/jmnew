@@ -19,6 +19,7 @@ const options = {
   method: "GET",
   headers: {
     accept: "application/json",
+    'Access-Control-Allow-Origin': '*',
     authorization:
       "2I2p6kcXxdjs4uxDtl4M5K12G8KlgnYla1lfHLqGsINq7UQb6sSwv0wver5OqqAi",
   },
