@@ -1,11 +1,7 @@
 {
-
-
   "name": "jmnew",
   "version": "0.1.0",
   "private": true,
- 
-
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
@@ -57,4 +53,3 @@
   "author": "",
   "license": "ISC"
 }
-

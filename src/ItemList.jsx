@@ -1,20 +1,19 @@
-// En Items.jsx
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const Items = () => {
+const ItemList = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://erp.duxsoftware.com.ar/WSERP/rest/services/items");
+        const response = await axios.get('http://localhost:8000/api/items?offset=50&limit=50');
         setItems(response.data.results);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
     };
-
+    
     fetchData();
   }, []);
 
@@ -22,9 +21,9 @@ const Items = () => {
     <div>
       <h1>Lista de Artículos</h1>
       <ul>
-        {items.map(item => (
-          <li key={item.cod_item}>
-            <strong>{item.item}</strong> - Código: {item.cod_item}, Costo: {item.costo}
+        {items.map((item, index) => (
+          <li key={index}>
+            <strong>{item.item}</strong> - {item.cod_item}
           </li>
         ))}
       </ul>
@@ -32,4 +31,4 @@ const Items = () => {
   );
 };
 
-export default Items;
+export default ItemList;
