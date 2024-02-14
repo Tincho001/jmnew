@@ -3,7 +3,7 @@
 //   headers: {
 //     accept: "application/json",
 //     authorization:
-//       "2I2p6kcXxdjs4uxDtl4M5K12G8KlgnYla1lfHLqGsINq7UQb6sSwv0wver5OqqAi",
+//       "mZ3CSCVZYN8KEI5FfcAw2kCiYoPW8ra5OJoX8Bx8k5iKYyRTg2MLpc6ZuHU1wNoo",
 //   },
 // };
 
@@ -12,4 +12,3 @@
 //   .then((response) => console.log(response))
 //   .catch((err) => console.error(err));
 
-// export default options
